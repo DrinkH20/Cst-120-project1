@@ -6,27 +6,50 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {height:100%;}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    hsl(50, 86%, 77%),
+    hsl(160, 20%, 63%),
+    hsl(197, 43%, 78%)
+  );
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 /* Header Styling */
 header {
   width: 100%;
-  background-color: hsl(16, 57%, 67%);
-  height: 20px;
+  background-color: hsl(56, 29%, 71%);
+  height: 40px;
   padding-top: 10px;
   padding-bottom: 15px;
 }
 
 /* Button Styling */
 button {
-  background-color: hsl(16, 57%, 67%);
+  background-color: hsl(56, 29%, 71%);
   border: none;
   border-radius: 3px;
   transition: 0.5s ease-in-out;
   font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /* This makes the buttons change colors when you hover over them with your mouse */
 button:hover {
-  background-color: hsl(16, 57%, 60%);
+  background-color: hsl(56, 50%, 71%);
 }
 
 a {
@@ -46,29 +69,106 @@ img:hover {
   animation: blinker 2s ease-in-out infinite;
 }
 
+/* Table Styling */
 td {
   font-size: 30px;
+  font-family: "Montserrat", sans-serif;
 }
+
+th {
+  font-size: 25px;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* This is specifically for the pages using glass design */
+main {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 
 /* Attemting to add a page with glass website design */
 .glass {
-  width: calc(100% - 120px);
-  height: calc(100% - 150px);
-  left: 60px;
-  top: 100px;
-  position: absolute;
-  background-color: aliceblue;
-  border-radius: 3rem;
-  justify-content: center;
-  align-items: center;
+  padding-top: 50px;
+  width: 80%;
+  min-height: 80vh;
+  background: linear-gradient(
+    to right bottom,
+    hsla(193, 87%, 30%, 0),
+    hsla(193, 85%, 21%, 0.1)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(.5rem);
+  border: 1px solid hsla(193, 85%, 21%, 0.1);
+  box-shadow: 0 8px 12px 0 hsla(193, 85%, 21%, 0.1);
+  overflow: hidden;
 }
 
-.glass table {
-  position: absolute;
-  left: calc(50% - 20%);
+/* Just a container */
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Youtube videos */
 iframe {
   padding: 10px;
+}
+
+/* This is the flexbox portion in the photos page */
+#flexRow1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#flexRow2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+/* Just changing up the image sizes */
+.img-1 {
+  height: 500px;
+}
+.img-2 {
+  height: 300px;
+}
+.img-3 {
+  height: 450px;
+}
+.img-4 {
+  height: 400px;
+}
+
+.img-5 {
+  height: 300px;
+}
+
+.img-6 {
+  height: 500px;
+}
+.img-7 {
+  height: 300px;
+}
+.img-8 {
+  height: 450px;
+}
+.img-9 {
+  height: 400px;
+}
+
+.img-10 {
+  height: 500px;
+}
+
+.img-11 {
+  height: 400px;
 }
