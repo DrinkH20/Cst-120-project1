@@ -26,7 +26,6 @@ body {
     hsl(160, 20%, 63%),
     hsl(197, 43%, 78%)
   );
-
   position: absolute;
   width: 100%;
   height: 100%;
@@ -35,15 +34,21 @@ body {
 /* Header Styling */
 header {
   width: 100%;
-  background-color: hsl(56, 29%, 71%);
+  /* background-color: hsl(56, 29%, 71%); */
   height: 40px;
   padding-top: 10px;
   padding-bottom: 15px;
+  margin-bottom: 10px;
+  background: hsla(193, 85%, 21%, 0);
+  backdrop-filter: blur(0.5rem);
+  border: 1px solid hsla(193, 85%, 21%, 0.1);
+  box-shadow: 0 8px 12px 0 hsla(193, 85%, 21%, 0.1);
 }
 
 /* Button Styling */
 button {
-  background-color: hsl(56, 29%, 71%);
+  background: hsla(193, 85%, 21%, 0);
+  backdrop-filter: blur(0.5rem);
   border: none;
   border-radius: 3px;
   transition: 0.5s ease-in-out;
@@ -54,7 +59,9 @@ button {
 
 /* This makes the buttons change colors when you hover over them with your mouse */
 button:hover {
-  background-color: hsl(56, 50%, 71%);
+  background: hsla(62, 93%, 84%, 0.404);
+  backdrop-filter: blur(0.5rem);
+
 }
 
 a {
@@ -89,7 +96,7 @@ th {
 
 /* This is specifically for the pages using glass design */
 main {
-  min-height: 100vh;
+  min-height: 90vh;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -99,7 +106,8 @@ main {
 .glass {
   padding-top: 50px;
   width: 80%;
-  min-height: 80vh;
+  min-height: 90vh;
+  max-height: 95vh;
   background: linear-gradient(
     to right bottom,
     hsla(193, 87%, 30%, 0),
@@ -124,6 +132,12 @@ iframe {
   padding: 10px;
 }
 
+
+/* List element  */
+li strong{
+  padding: 50px;
+}
+
 /* This is the flexbox portion in the photos page */
 #flexRow1 {
   display: flex;
@@ -140,7 +154,7 @@ iframe {
 
 /* Just changing up the image sizes */
 .img-1 {
-  height: 500px;
+  height: 300px;
 }
 .img-2 {
   height: 300px;
@@ -157,10 +171,10 @@ iframe {
 }
 
 .img-6 {
-  height: 500px;
+  height: 350px;
 }
 .img-7 {
-  height: 300px;
+  height: 200px;
 }
 .img-8 {
   height: 450px;
@@ -170,7 +184,7 @@ iframe {
 }
 
 .img-10 {
-  height: 500px;
+  height: 400px;
 }
 
 .img-11 {
