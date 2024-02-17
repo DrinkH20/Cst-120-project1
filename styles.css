@@ -6,13 +6,18 @@
   }
 }
 
+/* Gets rid of the annoying padding and margin that is automatically applied */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {height:100%;}
+/* This fixes the problem with position absolute background coloring */
+/* Without this I would try to use background-color, but it would not work becuase it did not register any hieght in the page */
+html {
+  height: 100%;
+}
 
 body {
   background: linear-gradient(
@@ -90,7 +95,6 @@ main {
   display: flex;
 }
 
-
 /* Attemting to add a page with glass website design */
 .glass {
   padding-top: 50px;
@@ -102,14 +106,14 @@ main {
     hsla(193, 85%, 21%, 0.1)
   );
   border-radius: 2rem;
-  backdrop-filter: blur(.5rem);
+  backdrop-filter: blur(0.5rem);
   border: 1px solid hsla(193, 85%, 21%, 0.1);
   box-shadow: 0 8px 12px 0 hsla(193, 85%, 21%, 0.1);
   overflow: hidden;
 }
 
 /* Just a container */
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
