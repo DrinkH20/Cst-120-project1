@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,8 @@
     <main>
         <div class="glass">
             <!-- This puts the "About Me" in the top middle of the page -->
-            <h1 style="text-align: center;">About Me</h1>
+            <h1 onclick="Click()" style="text-align: center;">About Me</h1>
+
             <section>
                 <!-- This is for the my picture on the left -->
                 <u class="cover"><img style="height: 500px; float: left; padding: 40px;"
@@ -38,7 +40,8 @@
 
 
                 <!-- This is my information on the front page -->
-                <p style="padding-top: 40px; font-size: 25px;">
+                <p id="words" onmouseenter="mouseenter()" onmouseleave="mouseleave()"
+                    style="padding-top: 40px; font-size: 25px;">
                     Hello! My name is Joel Jones, and this is my website. I was born and raised in the beautiful city of
                     Vancouver, Washington, located just across the river from Portland, Oregon. Vancouver has always
                     been my

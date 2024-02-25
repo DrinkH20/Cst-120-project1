@@ -20,12 +20,7 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    to bottom,
-    hsl(50, 86%, 77%),
-    hsl(160, 20%, 63%),
-    hsl(197, 43%, 78%)
-  );
+  background: linear-gradient(to top, #93a5cf, hsl(160, 20%, 63%), #e4efe9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -34,7 +29,6 @@ body {
 /* Header Styling */
 header {
   width: 100%;
-  /* background-color: hsl(56, 29%, 71%); */
   height: 40px;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -59,12 +53,12 @@ button {
 
 /* This makes the buttons change colors when you hover over them with your mouse */
 button:hover {
-  background: hsla(62, 93%, 84%, 0.404);
+  background: hsla(226, 85%, 21%, 0.089);
   backdrop-filter: blur(0.5rem);
-
 }
 
 a {
+  color: hsla(226, 85%, 21%, 0.486);
   font-size: 20px;
   text-decoration: none;
 }
@@ -83,7 +77,7 @@ img:hover {
 
 /* Table Styling */
 td {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -129,12 +123,11 @@ main {
 
 /* Youtube videos */
 iframe {
-  padding: 10px;
+  padding: 0px;
 }
 
-
 /* List element  */
-li strong{
+li strong {
   padding: 50px;
 }
 
@@ -147,44 +140,44 @@ li strong{
 }
 #flexRow2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: baseline;
 }
 
 /* Just changing up the image sizes */
 .img-1 {
-  height: 300px;
+  height: 200px;
 }
 .img-2 {
   height: 300px;
 }
 .img-3 {
-  height: 450px;
+  height: 250px;
 }
 .img-4 {
-  height: 400px;
-}
-
-.img-5 {
   height: 300px;
 }
 
-.img-6 {
-  height: 350px;
-}
-.img-7 {
+.img-5 {
   height: 200px;
 }
+
+.img-6 {
+  height: 250px;
+}
+.img-7 {
+  height: 300px;
+}
 .img-8 {
-  height: 450px;
+  height: 250px;
 }
 .img-9 {
-  height: 400px;
+  height: 200px;
 }
 
 .img-10 {
-  height: 400px;
+  height: 200px;
 }
 
 .img-11 {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/main.js"></script>
 </head>
 
 <!-- This is the NAV bar connecting to the home page -->
@@ -18,7 +19,7 @@
 
     <main>
         <div class="glass" style="padding: 10px;">
-            <h1 align="center">My Hobbies</h1>
+            <h1 onclick="Click()" align="center">My Hobbies</h1>
             <!-- Hobbies section -->
             <svg width="1200" height="60" style="float: left;">
                 <text x="0" y="50" fill="black" font-size="30">
@@ -31,7 +32,7 @@
 
             <!-- This is the div that has the table list of my hobbies -->
 
-            <table width="60%" border="1" style="float: left;">
+            <table id="words" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()" width="60%" border="1" style="float: left;">
                 <tr align="center">
                     <th width="50%">Hobbies</th>
                     <th width="50%">About</th>
@@ -65,7 +66,7 @@
             </table>
 
             <!-- Volleyball clip -->
-            <video width="620" height="540" controls style="float: left; padding: 30px;">
+            <video width="520" height="540" controls style="float: right; padding: 20px;">
                 <source src="videos/pexels-kampus-production-6179708 (1440p).mp4" type="video/mp4">
                 Your browser doews not support video tags.
             </video>
