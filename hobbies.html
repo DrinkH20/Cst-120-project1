@@ -6,70 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="js/main.js"></script>
+    <script type="module" defer src="js/main.js"></script>
 </head>
 
 <!-- This is the NAV bar connecting to the home page -->
 
 <body style="background-color: hsl(0, 0%, 100%);; margin: 0;">
-    <header>
-        <button>
-            <a style="font-size: 20px; text-decoration: none;" href="index.html">Home</a></button>
-    </header>
-
     <main>
-        <div class="glass" style="padding: 10px;">
-            <h1 onclick="Click()" align="center">My Hobbies</h1>
-            <!-- Hobbies section -->
-            <svg width="1200" height="60" style="float: left;">
-                <text x="0" y="50" fill="black" font-size="30">
-                    Some if my favorite hobbies:
-                    <animate attributeType="CSS" attributeName="opacity" value="1;0;1" dur="3s"
-                        repeatCount="indefinite" />
-                </text>
-                Sorry, your browser does not support inline SVG.
-            </svg>
+        <div class="glass">
+            <div id="swup" class="transition-fade">
+                <header>
+                    <button>
+                        <a style="font-size: 20px; text-decoration: none;" href="index.html">Home</a></button>
+                </header>
 
-            <!-- This is the div that has the table list of my hobbies -->
 
-            <table id="words" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()" width="60%" border="1" style="float: left;">
-                <tr align="center">
-                    <th width="50%">Hobbies</th>
-                    <th width="50%">About</th>
-                </tr>
-                <tr>
-                    <td align="left">Volleyball</td>
-                    <td align="center">Over the past 2-3 years I have found beach Volleyball to be one of my
-                        favorite
-                        outdoor summer activities.</td>
-                </tr>
-                <tr>
-                    <td align="left">Making games</td>
-                    <td align="center">Ever since I have been a kid I have enjoyed making games for fun. I started
-                        at nine
-                        years old just using scratch.mit.edu, but as I got older I moved to Python</td>
-                </tr>
-                <tr>
-                    <td align="left">Hunting and fishing</td>
-                    <td align="center">Hunting and fishing has been in my family forever. As far as I can remember,
-                        it has
-                        been a family tradition to go hunting over the whole month of september. I have also been
-                        fishing
-                        with my dad for as long as I can remember.</td>
-                </tr>
-                <tr>
-                    <td align="left">Going to the gym</td>
-                    <td align="center">I started going to the gym and working out at home about 2 years ago. I think
-                        it is
-                        something that everyone should do.</td>
-                </tr>
-            </table>
+                <h1 onclick="Click()" align="center">My Hobbies</h1>
+                <!-- Hobbies section -->
+                <svg width="1200" height="60" style="float: left;">
+                    <text x="0" y="50" fill="black" font-size="30">
+                        Some if my favorite hobbies:
+                        <animate attributeType="CSS" attributeName="opacity" value="1;0;1" dur="3s"
+                            repeatCount="indefinite" />
+                    </text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
 
-            <!-- Volleyball clip -->
-            <video width="520" height="540" controls style="float: right; padding: 20px;">
-                <source src="videos/pexels-kampus-production-6179708 (1440p).mp4" type="video/mp4">
-                Your browser doews not support video tags.
-            </video>
+                <!-- This is the div that has the table list of my hobbies -->
+
+                <table id="words" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()" width="60%" border="1"
+                    style="float: left;">
+                    <tr align="center">
+                        <th width="50%">Hobbies</th>
+                        <th width="50%">About</th>
+                    </tr>
+                    <tr>
+                        <td align="left">Volleyball</td>
+                        <td align="center">Over the past 2-3 years I have found beach Volleyball to be one of my
+                            favorite
+                            outdoor summer activities.</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Making games</td>
+                        <td align="center">Ever since I have been a kid I have enjoyed making games for fun. I started
+                            at nine
+                            years old just using scratch.mit.edu, but as I got older I moved to Python</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Hunting and fishing</td>
+                        <td align="center">Hunting and fishing has been in my family forever. As far as I can remember,
+                            it has
+                            been a family tradition to go hunting over the whole month of september. I have also been
+                            fishing
+                            with my dad for as long as I can remember.</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Going to the gym</td>
+                        <td align="center">I started going to the gym and working out at home about 2 years ago. I think
+                            it is
+                            something that everyone should do.</td>
+                    </tr>
+                </table>
+
+                <!-- Volleyball clip -->
+                <video width="520" height="540" controls style="float: right; padding: 20px;">
+                    <source src="videos/pexels-kampus-production-6179708 (1440p).mp4" type="video/mp4">
+                    Your browser doews not support video tags.
+                </video>
+            </div>
+
 
         </div>
     </main>

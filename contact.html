@@ -6,76 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="module" defer src="js/main.js"></script>
 </head>
 
 <!-- This is the NAV bar connecting to the home page -->
 
 <body style="background-color: hsl(0, 0%, 100%); margin: 0%;">
-    <header>
-        <button>
-            <a style="font-size: 20px; text-decoration: none;" href="index.html">Home</a></button>
-    </header>
-
-
     <main>
         <div class="glass">
-            <h1 align="center">My Contact Information</h1>
-            <br>
-            <!-- These are the images for each different way of contacting me -->
-            <div class="container"><img style="height: 100px; float: left; padding: 20px;"
-                    src="images/AdobeStock_546782398_Preview_Editorial_Use_Only.png" alt="Profile Picture">
-                <img style="height: 100px; float: left; padding: 20px;" src="images/AdobeStock_550012297_Preview.png"
-                    alt="Profile Picture">
-                <img style="height: 100px; float: left; padding: 20px;" src="images//AdobeStock_553663238_Preview.png"
-                    alt="Profile Picture">
-                <img style="height: 100px; padding: 20px;" src="images/AdobeStock_654713816_Preview.png"
-                    alt="Profile Picture"> <br>
-            </div>
+            <div id="swup" class="transition-fade">
+                <header>
+                    <button>
+                        <a style="font-size: 20px; text-decoration: none;" href="index.html">Home</a></button>
+                </header>
+
+                <h1 align="center">My Contact Information</h1>
+                <br>
+                <!-- These are the images for each different way of contacting me -->
+                <div class="container"><img style="height: 100px; float: left; padding: 20px;"
+                        src="images/AdobeStock_546782398_Preview_Editorial_Use_Only.png" alt="Profile Picture">
+                    <img style="height: 100px; float: left; padding: 20px;"
+                        src="images/AdobeStock_550012297_Preview.png" alt="Profile Picture">
+                    <img style="height: 100px; float: left; padding: 20px;"
+                        src="images//AdobeStock_553663238_Preview.png" alt="Profile Picture">
+                    <img style="height: 100px; padding: 20px;" src="images/AdobeStock_654713816_Preview.png"
+                        alt="Profile Picture"> <br>
+                </div>
 
 
-            <div class="container">
-                <!-- SVG is used to clear this sentence -->
-                <svg width="1200" height="60">
-                    <text x="410" y="50" fill="black" font-size="30">
-                        Here is my contact information:
-                        <animate attributeType="CSS" attributeName="opacity" value="1;0;1" dur="3s"
-                            repeatCount="indefinite" />
-                    </text>
-                    Sorry, your browser does not support inline SVG.
-                </svg>
+                <div class="container">
+                    <!-- SVG is used to clear this sentence -->
+                    <svg width="1200" height="60">
+                        <text x="410" y="50" fill="black" font-size="30">
+                            Here is my contact information:
+                            <animate attributeType="CSS" attributeName="opacity" value="1;0;1" dur="3s"
+                                repeatCount="indefinite" />
+                        </text>
+                        Sorry, your browser does not support inline SVG.
+                    </svg>
+                </div>
+
+                <br>
+
+                <div class="container">
+                    <table width="40%" border="1">
+                        <tr align="center">
+                            <th width="50%">How</th>
+                            <th width="50%">Where</th>
+                        </tr>
+                        <tr>
+                            <td align="left">Email</td>
+                            <td align="center">joeljones0725@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Text or call</td>
+                            <td align="center">360-903-8004</td>
+                        </tr>
+                        <tr>
+                            <td align="left">GitHub</td>
+                            <td align="center">https://github.com/DrinkH20</td>
+                        </tr>
+                        <tr>
+                            <td align="left">LinkedIn</td>
+                            <td align="center">https://www.linkedin.com/in/joel-jones-36b08b28b/</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="container">
+                    <p style="position: absolute; bottom: 0px;">PNG images retrieved from ADOBE STOCK: <br>
+                        <strong>https://stock.adobe.com/</strong>
+                    </p>
+                </div>
             </div>
 
-            <br>
-
-            <div class="container">
-                <table width="40%" border="1">
-                    <tr align="center">
-                        <th width="50%">How</th>
-                        <th width="50%">Where</th>
-                    </tr>
-                    <tr>
-                        <td align="left">Email</td>
-                        <td align="center">joeljones0725@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td align="left">Text or call</td>
-                        <td align="center">360-903-8004</td>
-                    </tr>
-                    <tr>
-                        <td align="left">GitHub</td>
-                        <td align="center">https://github.com/DrinkH20</td>
-                    </tr>
-                    <tr>
-                        <td align="left">LinkedIn</td>
-                        <td align="center">https://www.linkedin.com/in/joel-jones-36b08b28b/</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="container">
-                <p style="position: absolute; bottom: 0;">PNG images retrieved from ADOBE STOCK: <br>
-                    <strong>https://stock.adobe.com/</strong>
-                </p>
-            </div>
 
         </div>
     </main>
