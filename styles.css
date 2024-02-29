@@ -115,7 +115,7 @@ main {
   height: 92vh;
   max-height: 92vh;
   background: linear-gradient(
-    to  bottom,
+    to bottom,
     hsla(193, 87%, 30%, 0),
     hsla(193, 85%, 21%, 0.1)
   );
