@@ -5,22 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Important Events</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script type="module" defer src="js/swoop.js"></script>\
+    <script type="module" defer src="js/swoop.js"></script>
     <script defer src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">    
 </head>
 
 <!-- This is the NAV bar connecting to the home page -->
 
 <body style="margin: 0; height: 100%; width: 100%;">
+    <script>
+        function clicked() {
+            alert("I was clicked");
+        }
+
+        function displayUsers() {
+
+
+            // Define a Important Object with a Constructor 
+            function Important(date, description) {
+                this.date = date;
+                this.description = description;
+            };
+
+            // Define an array of Importants and initialize
+            var importants = [];
+            importants.push(new Important("July 25, 2006", "Birthday"),
+                new Important("2015-2016", "Salvation - Accepted Jesus Christ as my Savior at 11 or 12 years old."),
+                new Important("2021", "Baptism - Was baptized at my church at age 14. Significant faith milestone."),
+                new Important("2022", "First Job - Started working at age 15 for my brother's cleaning company doing administrative tasks"),
+                new Important("2024", "Got Driver's License - Passed road test and got my license at age 17"));
+
+            // Dynamically create all the rows in the table (note: this could simply be done with innerHTML attribute versus using jQuery) 
+            var x = 0;
+            for (var user of importants) {
+                var rowstyle = x & 1;
+                var markup = "<tr>" +
+                    "<td>" + user.date + "</td>" +
+                    "<td>" + user.description + "</td>" +
+                    "</tr>";
+                $("#users").find("tbody").append(markup);
+                $("#users").find("tbody").find("tr").last().attr("id", x);
+                $("#users").find("tbody").find("tr").last().attr("align", "center");
+                $("#users").find("tbody").find("tr").last().css("background-color", rowstyle);
+                $("#users").find("tbody").find("tr").last().find("td").get(0).id = x + "_0";
+                $("#users").find("tbody").find("tr").last().find("td").get(1).id = x + "_1";
+                ++x;
+            }
+            $("#0_1").bind('click', clicked);
+        }
+
+        $(document).ready(displayUsers)
+    </script>
     <main>
-        <div class="glass">
+        <div class="glass mx-auto d-block">
             <div id="swup" class="transition-fade">
                 <header>
                     <button>
@@ -28,15 +75,26 @@
                 </header>
 
                 <h1 align="center">Important Events</h1>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <br><br><br><br><br>
 
                 <!-- Different important events in my life -->
                 <div class="container">
-                    <table width="70%" border="1">
+                    <table id="users" width="80%" border="1">
+                        <thead>
+                            <tr>
+                                <th width="50%">First Name</th>
+                                <th width="50%">Last Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+
+
+
+
+                    <!-- <table width="70%" border="1">
                         <tr align="center">
                             <th align="left" width="50%">Date</th>
                             <th align="left" width="50%">Description</th>
@@ -66,7 +124,7 @@
                             <td align="center">2024</td>
                             <td align="center">Got Driver's License - Passed road test and got my license at age 17</td>
                         </tr>
-                    </table>
+                    </table> -->
                 </div>
 
 

@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" defer src="js/swoop.js"></script>\
+    <script type="module" defer src="js/swoop.js"></script>
     <script defer src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <!-- This is the NAV bar connecting to the home page -->
 
 <body style="background-color: hsl(0, 0%, 100%); margin: 0%;">
     <main>
-        <div class="glass">
+        <div class="glass mx-auto d-block">
             <div id="swup" class="transition-fade">
                 <header>
                     <button>
@@ -29,33 +33,45 @@
                     or
                     so:</h2>
                 <!-- These are the images -->
-                <div id="flexRow1">
-                    <img class="img-6" style="float: left; padding: 15px;" src="images/IMG_6453.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-2" style="float: left; padding: 15px;" src="images/IMG_5351.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-3" style="float: left; padding: 15px;" src="images/IMG_6450.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-4" style="float: left; padding: 15px;" src="images/IMG_7047.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-10" style="float: left; padding: 15px;" src="images/IMG_5352.jpeg"
-                        alt="Profile Picture">
+                <div class="container-fluid">
+                    <!-- Control the column width, and how they should appear on different devices -->
+                    <div class="row">
+                        <div class="col-sm-6" style="height: 250px; overflow: hidden;">
+                            <img class="img-6" style="float: left; padding: 15px;" src="images/IMG_6453.jpeg"
+                                alt="Profile Picture">
+                            <img class="img-3" style="float: left; padding: 15px;" src="images/IMG_6450.jpeg"
+                                alt="Profile Picture">
+                        </div>
+                        <div class="col-sm-6" style="height: 250px; overflow: hidden;"><img class="img-2"
+                                style="float: left; padding: 15px;" src="images/IMG_5351.jpeg" alt="Profile Picture">
+                                <img class="img-5" style="float: left; padding: 15px;" src="images/IMG_1410.jpeg"
+                                alt="Profile Picture">
+                        </div>
+                    </div>
+                    <br>
 
-                </div>
-
-                <div id="flexRow2">
-                    <img class="img-5" style="float: left; padding: 15px;" src="images/IMG_1410.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-1" style="float: left; padding: 15px;" src="images/IMG_5239.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-7" style="float: left; padding: 15px;" src="images/IMG_6663.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-8" style="float: left; padding: 15px;" src="images/IMG_6984.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-9" style="float: left; padding: 15px;" src="images/IMG_7025.jpeg"
-                        alt="Profile Picture">
-                    <img class="img-11" style="float: left; padding: 15px;" src="images/IMG_7120.jpeg"
-                        alt="Profile Picture">
+                    <div class="row">
+                        <div class="col-sm-4" style="height: 250px; overflow: hidden;">
+                            <img class="img-4" style="float: left; padding: 15px;" src="images/IMG_7047.jpeg"
+                                alt="Profile Picture">
+                            <img class="img-10" style="float: left; padding: 15px;" src="images/IMG_5352.jpeg"
+                                alt="Profile Picture">
+                        </div>
+                        <div class="col-sm-4" style="height: 250px; overflow: hidden;">
+                            <img class="img-1" style="float: left; padding: 15px;" src="images/IMG_5239.jpeg"
+                                alt="Profile Picture">
+                            <img class="img-7" style="float: left; padding: 15px;" src="images/IMG_6663.jpeg"
+                                alt="Profile Picture">
+                        </div>
+                        <div class="col-sm-4" style="height: 250px; overflow: hidden;"><img class="img-8"
+                                style="float: left; padding: 15px;" src="images/IMG_6984.jpeg" alt="Profile Picture">
+                            <img class="img-9" style="float: left; padding: 15px;" src="images/IMG_7025.jpeg"
+                                alt="Profile Picture">
+                            <img class="img-11" style="float: left; padding: 15px;" src="images/IMG_7120.jpeg"
+                                alt="Profile Picture">
+                        </div>
+                    </div>
+                    <br>
                 </div>
             </div>
 
