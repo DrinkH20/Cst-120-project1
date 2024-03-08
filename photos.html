@@ -7,76 +7,110 @@
     <title>Contact Information</title>
     <script type="module" defer src="js/swoop.js"></script>
     <script defer src="js/main.js"></script>
+    <!-- This imports the boostrap and jquery libraries -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <!-- This is the NAV bar connecting to the home page -->
 
 <body style="background-color: hsl(0, 0%, 100%); margin: 0%;">
-    <main>
-        <div class="glass mx-auto d-block">
-            <div id="swup" class="transition-fade">
-                <header>
-                    <button>
-                        <a href="index.html">Home</a></button>
-                </header>
-
-
-                <h1 align="center">Photos</h1>
-                <br>
-
-                <h2 style="padding: 15px; margin: 0;"> Here are some of my favorite picture I have took in the last year
-                    or
-                    so:</h2>
-                <!-- These are the images -->
-                <div class="container-fluid">
-                    <!-- Control the column width, and how they should appear on different devices -->
-                    <div class="row">
-                        <div class="col-sm-6" style="height: 250px; overflow: hidden;">
-                            <img class="img-6" style="float: left; padding: 15px;" src="images/IMG_6453.jpeg"
-                                alt="Profile Picture">
-                            <img class="img-3" style="float: left; padding: 15px;" src="images/IMG_6450.jpeg"
-                                alt="Profile Picture">
+    <div class="container-fluid h-100 d-flex justify-content-center align-items-center">
+        <div class="card m-2 cb1 text-center">
+            <div class.card-body>
+                <nav class="navbar navbar-expand-sm bg-custom">
+                    <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand ms-3 bg-custom-word" href="index.html">My Website</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="important.html">Important Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="contact.html">Contact Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="hobbies.html">List of Hobbies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="share.html">Things to Share</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="photos.html">Photo Collection</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-sm-6" style="height: 250px; overflow: hidden;"><img class="img-2"
-                                style="float: left; padding: 15px;" src="images/IMG_5351.jpeg" alt="Profile Picture">
+                    </div>
+                </nav>
+                <div id="swup" class="transition-fade">
+
+
+                    <h1 align="center">Photos</h1>
+                    <br>
+
+                    <h2 style="padding: 15px; margin: 0;"> Here are some of my favorite picture I have took in the last
+                        year
+                        or
+                        so:</h2>
+                    <!-- These are the images -->
+                    <div class="container-fluid">
+                        <!-- Control the column width, and how they should appear on different devices -->
+                        <div class="row">
+                            <div class="col-sm-6" style="height: 250px; overflow: hidden;">
+                                <img class="img-6" style="float: left; padding: 15px;" src="images/IMG_6453.jpeg"
+                                    alt="Profile Picture">
+                                <img class="img-3" style="float: left; padding: 15px;" src="images/IMG_6450.jpeg"
+                                    alt="Profile Picture">
+                            </div>
+                            <div class="col-sm-6" style="height: 250px; overflow: hidden;"><img class="img-2"
+                                    style="float: left; padding: 15px;" src="images/IMG_5351.jpeg"
+                                    alt="Profile Picture">
                                 <img class="img-5" style="float: left; padding: 15px;" src="images/IMG_1410.jpeg"
-                                alt="Profile Picture">
+                                    alt="Profile Picture">
+                            </div>
                         </div>
-                    </div>
-                    <br>
+                        <br>
 
-                    <div class="row">
-                        <div class="col-sm-4" style="height: 250px; overflow: hidden;">
-                            <img class="img-4" style="float: left; padding: 15px;" src="images/IMG_7047.jpeg"
-                                alt="Profile Picture">
-                            <img class="img-10" style="float: left; padding: 15px;" src="images/IMG_5352.jpeg"
-                                alt="Profile Picture">
+                        <div class="row">
+                            <div class="col-sm-4" style="height: 250px; overflow: hidden;">
+                                <img class="img-4" style="float: left; padding: 15px;" src="images/IMG_7047.jpeg"
+                                    alt="Profile Picture">
+                                <img class="img-10" style="float: left; padding: 15px;" src="images/IMG_5352.jpeg"
+                                    alt="Profile Picture">
+                            </div>
+                            <div class="col-sm-4" style="height: 250px; overflow: hidden;">
+                                <img class="img-1" style="float: left; padding: 15px;" src="images/IMG_5239.jpeg"
+                                    alt="Profile Picture">
+                                <img class="img-7" style="float: left; padding: 15px;" src="images/IMG_6663.jpeg"
+                                    alt="Profile Picture">
+                            </div>
+                            <div class="col-sm-4" style="height: 250px; overflow: hidden;"><img class="img-8"
+                                    style="float: left; padding: 15px;" src="images/IMG_6984.jpeg"
+                                    alt="Profile Picture">
+                                <img class="img-9" style="float: left; padding: 15px;" src="images/IMG_7025.jpeg"
+                                    alt="Profile Picture">
+                                <img class="img-11" style="float: left; padding: 15px;" src="images/IMG_7120.jpeg"
+                                    alt="Profile Picture">
+                            </div>
                         </div>
-                        <div class="col-sm-4" style="height: 250px; overflow: hidden;">
-                            <img class="img-1" style="float: left; padding: 15px;" src="images/IMG_5239.jpeg"
-                                alt="Profile Picture">
-                            <img class="img-7" style="float: left; padding: 15px;" src="images/IMG_6663.jpeg"
-                                alt="Profile Picture">
-                        </div>
-                        <div class="col-sm-4" style="height: 250px; overflow: hidden;"><img class="img-8"
-                                style="float: left; padding: 15px;" src="images/IMG_6984.jpeg" alt="Profile Picture">
-                            <img class="img-9" style="float: left; padding: 15px;" src="images/IMG_7025.jpeg"
-                                alt="Profile Picture">
-                            <img class="img-11" style="float: left; padding: 15px;" src="images/IMG_7120.jpeg"
-                                alt="Profile Picture">
-                        </div>
+                        <br>
                     </div>
-                    <br>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 
 </body>

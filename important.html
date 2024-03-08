@@ -17,7 +17,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <!-- This is the NAV bar connecting to the home page -->
@@ -29,8 +29,6 @@
         }
 
         function displayUsers() {
-
-
             // Define a Important Object with a Constructor 
             function Important(date, description) {
                 this.date = date;
@@ -45,7 +43,7 @@
                 new Important("2022", "First Job - Started working at age 15 for my brother's cleaning company doing administrative tasks"),
                 new Important("2024", "Got Driver's License - Passed road test and got my license at age 17"));
 
-            // Dynamically create all the rows in the table (note: this could simply be done with innerHTML attribute versus using jQuery) 
+            // Dynamically create all the rows in the table
             var x = 0;
             for (var user of importants) {
                 var rowstyle = x & 1;
@@ -64,37 +62,78 @@
             $("#0_1").bind('click', clicked);
         }
 
-        $(document).ready(displayUsers)
+        // Wrap your table population logic within $(document).ready
+        $(document).ready(displayUsers);
     </script>
-    <main>
-        <div class="glass mx-auto d-block">
-            <div id="swup" class="transition-fade">
-                <header>
-                    <button>
-                        <a href="index.html">Home</a></button>
-                </header>
+    <div class="container-fluid h-100 d-flex justify-content-center align-items-center">
+        <div class="card m-2 cb1 text-center">
+            <div class.card-body>
+                <nav class="navbar navbar-expand-sm bg-custom">
+                    <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand ms-3 bg-custom-word" href="index.html">My Website</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="important.html">Important Events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="contact.html">Contact Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="hobbies.html">List of Hobbies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="share.html">Things to Share</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-custom-word" href="photos.html">Photo Collection</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div id="swup" class="transition-fade">
 
-                <h1 align="center">Important Events</h1>
-                <br><br><br><br><br>
+                    <h1 align="center">Important Events</h1>
+                    <br><br><br><br><br>
 
-                <!-- Different important events in my life -->
-                <div class="container">
-                    <table id="users" width="80%" border="1">
-                        <thead>
-                            <tr>
-                                <th width="50%">Date</th>
-                                <th width="50%">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-
-
+                    <!-- Different important events in my life -->
+                    <div class="container">
+                        <table id="users" width="80%" border="1">
+                            <thead>
+                                <tr>
+                                    <th width="50%">Date</th>
+                                    <th width="50%">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
 
 
 
-                    <!-- <table width="70%" border="1">
+
+
+
+                    </div>
+
+
+                    <br>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<!-- <table width="70%" border="1">
                         <tr align="center">
                             <th align="left" width="50%">Date</th>
                             <th align="left" width="50%">Description</th>
@@ -125,15 +164,3 @@
                             <td align="center">Got Driver's License - Passed road test and got my license at age 17</td>
                         </tr>
                     </table> -->
-                </div>
-
-
-                <br>
-            </div>
-
-        </div>
-    </main>
-
-</body>
-
-</html>

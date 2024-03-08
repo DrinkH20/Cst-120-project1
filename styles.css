@@ -1,7 +1,11 @@
 /* Annimations */
 
+
 @keyframes blinker {
   50% {
+    transform: rotateY(15deg);
+  }
+  100% {
     transform: rotateY(15deg);
   }
 }
@@ -30,16 +34,26 @@ html.is-animating .transition-fade {
 /* Without this I would try to use background-color, but it would not work becuase it did not register any hieght in the page */
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   background: linear-gradient(to top, #93a5cf, hsl(160, 20%, 63%), #e4efe9);
-  position: absolute;
+  background-position: center center;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
 }
 
-/* Header Styling */
+.bg-custom {
+  background-color: hsla(193, 85%, 21%, 0.144);
+}
+
+.bg-custom-word {
+  color: hsla(193, 85%, 21%, 0.863);
+}
+
+/* Header Styling
 header {
   width: 100%;
   height: 40px;
@@ -49,10 +63,10 @@ header {
   background: hsla(193, 85%, 21%, 0);
   backdrop-filter: blur(0.5rem);
   box-shadow: 0 4px 12px 0 hsla(193, 85%, 21%, 0.1);
-}
+} */
 
 /* Button Styling */
-button {
+/* button {
   background: hsla(193, 85%, 21%, 0);
   backdrop-filter: blur(0.5rem);
   border: none;
@@ -62,10 +76,10 @@ button {
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
-}
+} */
 
 /* This makes the buttons change colors when you hover over them with your mouse */
-button:hover {
+/* button:hover {
   background: hsla(226, 85%, 21%, 0.089);
   backdrop-filter: blur(0.5rem);
   text-decoration: none;
@@ -75,30 +89,26 @@ a {
   color: hsla(226, 85%, 21%, 0.486);
   font-size: 20px;
   text-decoration: none;
-}
+} */
 
 /* Image styling - Made them all the same hieght and added rounded edges */
 img {
   border-radius: 3rem;
   transition: 2s ease-in-out;
-}
+} 
 
 img:hover {
   transition: 2s ease-in-out;
-  /* transform: rotateY(15deg); */
-  animation: blinker 2s ease-in-out infinite;
+  transform: rotateY(15deg);
+  /* animation: blinker 2s ease-in-out infinite; */
 }
 
 /* Table Styling */
 td {
-  font-size: 22px;
   font-family: "Montserrat", sans-serif;
-}
-
+} 
 th {
-  font-size: 25px;
   font-family: "Anta", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -111,9 +121,9 @@ main {
 }
 
 /* Attemting to add a page with glass website design */
-.glass {
-  margin-top: 30px;
-  width: 80%;
+.card {
+  margin-top: 100px;
+  width: 90%;
   height: 92vh;
   max-height: 92vh;
   background: linear-gradient(
@@ -126,28 +136,28 @@ main {
   border: 1px solid hsla(193, 85%, 21%, 0.1);
   box-shadow: 0px 8px 12px 0px hsla(193, 85%, 21%, 0.1);
   overflow: hidden;
-  /* animation: load 1s; */
+  animation: load 1s;
 }
 
 /* Just a container */
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Youtube videos */
-iframe {
+/* iframe {
   padding: 0px;
-}
+} */
 
 /* List element  */
-li strong {
+/* li strong {
   padding: 50px;
-}
+} */
 
 /* This is the flexbox portion in the photos page */
-#flexRow1 {
+/* #flexRow1 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -158,7 +168,7 @@ li strong {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: baseline;
-}
+} */
 
 /* Just changing up the image sizes */
 
