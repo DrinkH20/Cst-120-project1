@@ -40,7 +40,6 @@ html {
 body {
   background: linear-gradient(to top, #93a5cf, hsl(160, 20%, 63%), #e4efe9);
   background-position: center center;
-  /* position: absolute; */
   width: 100%;
   height: 100%;
 }
@@ -53,44 +52,6 @@ body {
   color: hsla(193, 85%, 21%, 0.863);
 }
 
-/* Header Styling
-header {
-  width: 100%;
-  height: 40px;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
-  background: hsla(193, 85%, 21%, 0);
-  backdrop-filter: blur(0.5rem);
-  box-shadow: 0 4px 12px 0 hsla(193, 85%, 21%, 0.1);
-} */
-
-/* Button Styling */
-/* button {
-  background: hsla(193, 85%, 21%, 0);
-  backdrop-filter: blur(0.5rem);
-  border: none;
-  border-radius: 3px;
-  transition: 0.5s ease-in-out;
-  font-weight: bold;
-  padding-right: 10px;
-  padding-left: 10px;
-  text-decoration: none;
-} */
-
-/* This makes the buttons change colors when you hover over them with your mouse */
-/* button:hover {
-  background: hsla(226, 85%, 21%, 0.089);
-  backdrop-filter: blur(0.5rem);
-  text-decoration: none;
-}
-
-a {
-  color: hsla(226, 85%, 21%, 0.486);
-  font-size: 20px;
-  text-decoration: none;
-} */
-
 /* Image styling - Made them all the same hieght and added rounded edges */
 img {
   border-radius: 3rem;
@@ -100,7 +61,6 @@ img {
 img:hover {
   transition: 2s ease-in-out;
   transform: rotateY(15deg);
-  /* animation: blinker 2s ease-in-out infinite; */
 }
 
 /* Table Styling */
@@ -138,37 +98,6 @@ main {
   overflow: hidden;
   animation: load 1s;
 }
-
-/* Just a container */
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* Youtube videos */
-/* iframe {
-  padding: 0px;
-} */
-
-/* List element  */
-/* li strong {
-  padding: 50px;
-} */
-
-/* This is the flexbox portion in the photos page */
-/* #flexRow1 {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-}
-#flexRow2 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: baseline;
-} */
 
 /* Just changing up the image sizes */
 
